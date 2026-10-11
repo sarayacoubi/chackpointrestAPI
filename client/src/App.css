@@ -1,0 +1,249 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  width:100%;
+}
+.App{
+  min-height:100vh;
+  min-width:100%;
+}
+/* Style global de la Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcf9f5; /* Même fond crème doux que la carte */
+    border: 1px solid #f0e6dc;
+    border-radius: 12px;
+    padding: 12px 24px;
+    min-width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Logo ou nom du site */
+.brand-logo {
+    text-decoration: none;
+    color: #4a403a;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Liste des liens */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style des liens de navigation */
+.nav-link {
+    text-decoration: none;
+    color: #736357;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Effet au survol des liens simples */
+.nav-link:hover {
+    color: #4a403a;
+    background-color: #f0e6dc;
+}
+
+/* Lien actif (optionnel pour montrer la page en cours) */
+.nav-link.active {
+    color: #4a403a;
+    background-color: #f0e6dc;
+}
+
+/* Bouton spécial "Add Contact" avec un ton pastel doux */
+.btn-add {
+    background-color: #e3ecf5; /* Ton pastel bleuté similaire au bouton Edit */
+    color: #3b5978;
+}
+
+.btn-add:hover {
+    background-color: #d1e2f2;
+    color: #2c435c;
+}
+
+
+.contactlist{
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  gap:50px;
+}
+
+/* Style global de la carte */
+.contact-card {
+    background-color: #fcf9f5; /* Fond crème très doux */
+    border: 1px solid #f0e6dc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet au survol de la carte */
+.contact-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Informations du contact */
+.contact-info h3 {
+    margin: 0 0 6px 0;
+    color: #4a403a;
+    font-size: 1.15rem;
+}
+
+.contact-age {
+    margin: 0 0 6px 0;
+    color: #8c7b70;
+    font-size: 0.9rem;
+}
+
+.contact-email {
+    margin: 0 0 16px 0;
+    color: #736357;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+/* Conteneur des boutons */
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Style de base des boutons */
+.btn {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Bouton Éditer (Ton pastel bleuté / gris doux) */
+.btn-edit {
+    background-color: #e3ecf5;
+    color: #3b5978;
+}
+
+.btn-edit:hover {
+    background-color: #d1e2f2;
+}
+
+/* Bouton Supprimer (Ton pastel rosé / corail doux) */
+.btn-delete {
+    background-color: #fce8e6;
+    color: #a84d46;
+}
+
+.btn-delete:hover {
+    background-color: #f7d7d4;
+}
+
+
+.addContainer{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+/* Style global du conteneur du formulaire */
+.contact-form-card {
+    background-color: #fcf9f5; /* Fond crème doux */
+    border: 1px solid #f0e6dc;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Titre du formulaire */
+.contact-form-card h2 {
+    margin: 0 0 20px 0;
+    color: #4a403a;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Groupes de champs */
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+    margin-bottom: 6px;
+    color: #736357;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Champs de saisie (Inputs) */
+.form-group input {
+    padding: 10px 14px;
+    border: 1px solid #f0e6dc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #4a403a;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet focus sur les inputs */
+.form-group input:focus {
+    border-color: #b5c4d6;
+    box-shadow: 0 0 0 3px rgba(227, 236, 245, 0.4);
+}
+
+/* Texte indicatif (placeholder) */
+.form-group input::placeholder {
+    color: #bfaea3;
+}
+
+/* Bouton de validation (Ton pastel assorti) */
+.btn-submit {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e3ecf5; /* Même bleu pastel doux que les boutons précédents */
+    color: #3b5978;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
+    background-color: #d1e2f2;
+}
